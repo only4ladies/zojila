@@ -1,0 +1,30 @@
+<ifModule mod_headers.c>
+Header set Access-Control-Allow-Origin "*"
+</ifModule>
+
+<ifModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+</ifModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+ErrorDocument 404 "Not Found"
+ErrorDocument 405 "Invalid Request"
+
+RewriteEngine On
+RewriteRule \.php$ - [L]
+
+RewriteRule member/userVerify?$ userVerify.php [L]
+RewriteRule member/userProfile?$ userProfile.php [L]
+RewriteRule member/kameti?$ kameti.php [L]
+RewriteRule member/([^/]+)/profile/?$ profile.php?member_mobile_number=$1 [L]
+RewriteRule admin/([^/]+)/start/?$ start_kameti.php?admin_mobile_number=$1 [L]
+
+RewriteRule kameti/([^/]+)/?$ my_kameti.php?member_mobile_number=$1 [L]

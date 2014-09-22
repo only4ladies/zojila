@@ -1,0 +1,43 @@
+REST API
+
+S.No	Method	Path																				Description										Output
+
+1.		GET	/member/${mobile_number}/profile											Get the profile detail of the given member
+2.		POST	/member/${mobile_number}/profile											Add new profile for the given mobile number
+3.		PUT 	/member/${mobile_number}/profile											Update the profile for given number
+
+4.		PUT	/admin/${mobile_number}/start												Start new kameti 
+5.		GET	/kameti/${mobile_number}													Get all the kameti for the given number
+6.		POST	/admin/${mobile_number}/${kameti_id}										Update the kameti info
+7.		GET 	/admin/${mobile_number}/${kameti_id}/members								Get the list of the member of the given kameti_id
+8.		PUT 	/admin/${mobile_number}/${kameti_id}/member/${member_mobile} 				Add/Edit member profile info
+
+
+9.		GET 	/kameti/${mobile_number}/${kameti_id}										Get the list of all member if ${mobile_number} is the admin of the given ${kameti_id}
+10.		PUT		/member/${mobile_number}/${kameti_id}/bid									Member of the given kameti_id will bid
+11.		PUT 	/admin/${mobile_number}/${kameti_id}/bid/${member_mobile}					Admin will bid in behalf of member
+12.		GET		/admin/${mobile_number}/${kameti_id}/lucky_draw								Get the lucky draw
+
+13.		
+==============================
+200	OK
+201	Created
+304	Not Modified
+400	Bad Request
+401	Unauthorized
+403	Forbidden
+404	Not Found
+422	Unprocessable Entity
+500	Internal Server Error
+
+================================
+
+API Url Structure
+URL	Method	Parameters	Description
+/register	POST	name, email, password	User registration
+/login	POST	email, password	User login
+/tasks	POST	task	To create new task
+/tasks	GET		Fetching all tasks
+/tasks/:id	GET		Fetching single task
+/tasks/:id	PUT		Updating single task
+/tasks/:id	DELETE	task, status	Deleting single task
