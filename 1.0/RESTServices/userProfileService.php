@@ -187,6 +187,7 @@ class userProfileService {
 		}
 		if(mysqli_error($link)) {
 			$msg = mysqli_errno($link) . ": " . mysqli_error($link);
+			echo "$msg";
 			throw new Exception('MySQL Error - '. $msg);
 		}		
 	}
