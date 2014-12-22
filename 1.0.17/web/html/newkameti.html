@@ -1,0 +1,269 @@
+<div class="page-content" >
+    <div class="row">
+        <div class="space-16"></div>
+        <div class="col-sm-9 col-sm-offset-1">
+            <div id="kametiForm" class="visible widget-box no-border">
+                <div class="widget-body">
+                    <div class="widget-main">
+                        <h1 class="bg-primary col-sm-10">
+                            New Kameti
+                        </h1>
+                        <div class="space col-sm-10"></div>
+
+                        <form class="form-signin" role="form">
+                            <h2><span class="label label-info col-sm-10 no-padding-right">
+                                    Kameti
+                                </span>
+                            </h2>
+                            <div class="space col-sm-10"><br></div>
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Name {{kameti.kameti_name}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="mobilenumber" class="form-control" placeholder="Kameti Name" name="kametiName"
+                                               ng-model="kameti.kameti_name" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i class="fa fa-edit"></i></button>
+                                      </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                            <div class="form-group">
+
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Start Date {{kameti.kameti_start_date}}
+                                </span></h4>
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                      <input type="date" class="form-control" ng-model="kameti.kameti_start_date"/>
+                                      <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                                      </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Members {{kameti.kameti_members}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="number" class="form-control" placeholder="Kameti Member (15)"
+                                               name="kametiMember" ng-model="kameti.kameti_members" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i class="fa fa-group"></i></button>
+                                      </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Amount {{kameti.kameti_amount}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="number" class="form-control" placeholder="Kameti Amount (50000)" name="kametiAmount"
+                                               ng-model="kameti.kameti_amount" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i class="fa fa-inr"></i></button>
+                                      </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Interest {{kameti.kameti_interest_rate}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input class="form-control" placeholder="Interest Rate (1%)" name="kametiInterestRate"
+                                               ng-model="kameti.kameti_interest_rate" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i>%</i></button>
+                                      </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Rule Type {{kameti.kameti_rule}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <label class="radio-inline"> <input type="radio" ng-model="kameti.kameti_rule" id="Reducing1" value="1"> Reducing1 </label>
+                                    <label class="radio-inline"> <input type="radio" ng-model="kameti.kameti_rule" id="Reducing2" value="2"> Reducing2 </label>
+                                    <label class="radio-inline"> <input type="radio" ng-model="kameti.kameti_rule" id="Fixed" value="3"> Fixed </label>
+                                </div>
+                            </div>
+                            <div class="space col-sm-10"><br></div>
+
+                            <h2><span class="label label-info col-sm-10 no-padding-right">
+                                    Auction
+                                </span>
+                            </h2>
+                            <div class="space col-sm-10"><br></div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Start Time {{kameti.bid_start_time}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+
+                                        <input type="time" class="form-control" placeholder="{{kameti.bid_start_time}}"
+                                               name="bidStartTime"  ng-model="kameti.bid_start_time" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></button>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space col-sm-10"><br></div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    End Time {{kameti.bid_end_time}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+
+                                        <input type="time" class="form-control" placeholder="{{kameti.bid_end_time}}"
+                                               name="bidEndTime" ng-model="kameti.bid_end_time" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></button>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space col-sm-10"><br></div>
+
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Min. Bid Amount {{kameti.bid_amount_minimum}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+
+                                        <input type="number" class="form-control" placeholder="200"
+                                               name="bidEndTime" ng-model="kameti.bid_amount_minimum"  ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i class="fa fa-inr"></i></button>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space col-sm-10"><br></div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Timer {{kameti.bid_timer}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+
+                                        <input type="number" class="form-control" placeholder="5 min"
+                                               name="bidTimer" ng-model="kameti.bid_timer"  ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></button>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space col-sm-10"><br></div>
+
+                             <h2><span class="label label-info col-sm-10 no-padding-right">
+                                    Lucky Draw
+                                </span>
+                            </h2>
+                            <div class="space col-sm-10"><br></div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Draw Amount {{kameti.lucky_draw_amount}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+
+                                        <input type="number" class="form-control" placeholder="500"
+                                               name="luckyDrawAmount" ng-model="kameti.lucky_draw_amount"  ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><span class="fa fa-inr" aria-hidden="true"></span></button>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space col-sm-10"><br></div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Members {{kameti.lucky_members}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+
+                                        <input type="number" class="form-control" placeholder="2"
+                                               name="luckyMembers" ng-model="kameti.lucky_members"  ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><span class="fa fa-group" aria-hidden="true"></span></button>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space col-sm-10"><br></div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Runner-up {{kameti.runnerup_percentage}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+
+                                        <input type="number" class="form-control" placeholder="50%"
+                                               name="runnerupPercentage" ng-model="kameti.runnerup_percentage"  ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i>%</i></button>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="space col-sm-10"><br></div>
+                            <div class="space col-sm-3"></div>
+
+                            <div class="clearfix">
+
+                                    <div class="col-sm-7">
+                                        <button type="submit" class="width-35 pull-right btn btn-sm btn-primary no-padding-right" ng-click="kametiPost(kameti)"
+                                                data-ng-disabled="kametiForm.$invalid">
+                                            <i class="ace-icon fa fa-key"></i>
+                                            Submit
+                                        </button>
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.page-content -->
+    </div>
+</div>

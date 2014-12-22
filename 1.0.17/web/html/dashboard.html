@@ -1,0 +1,25 @@
+<div class="page-content">
+    <div class="row">
+        <div class="space-6"></div>
+        <div class="col-sm-10 col-sm-offset-1">
+            <div id="login-box" class="login-box visible widget-box no-border">
+                <div class="widget-body">
+                    <div class="widget-main">
+                        <h4 class="header blue lighter bigger">
+                            <i class="icon-coffee green"></i>
+                            User Authenticated
+                        </h4>
+                        <div class="space-16"></div>
+                        id: {{id}}
+                        <br/>NAME: {{kametiList[0].kameti_name}}
+                        <br/>Mobile: {{mobile}}
+                        <br/>Created At: {{device_key}}
+                        <br/>
+                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> <a ng-click="logout();">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.page-content -->

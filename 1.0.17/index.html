@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="kameti">
+    <head>
+		<meta charset="utf-8">
+        <title>Kameti Application|Kameti</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- All in One SEO Pack -->
+		<meta name="description"  content="Kameti, committee, crowd financing." />
+		<meta name="fragment" content="!">
+		<meta name="keywords"  content="Kameti, committee, crowd financing" />
+
+		<!-- KAMETI styles -->
+		<link type="text/css" href="web/css/bootstrap.min.css" rel="stylesheet"/>
+
+		<link type="text/css" href="web/css/styles.css" rel="stylesheet"/>
+		<link type="text/css" href="web/css/bootstrap-select.min.css" rel="stylesheet"/>
+		<link type="text/css" href="web/css/font-awesome.min.css" rel="stylesheet"/>
+		<link type="text/css" href="web/css/tooltipster.css" rel="stylesheet" />
+		<link type="text/css" href="web/css/toaster.css" rel="stylesheet">
+		<link type="text/css" href="web/css/kameti.css" rel="stylesheet"/>
+
+		<!-- Custom styles for this template -->
+		<link type="text/css" href="web/css/sticky-footer-navbar.css" rel="stylesheet">
+
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="web/img/icons/kameti.png"/>
+    </head>
+    <body ng-cloak="">
+		<!-- Header Area Starts  -->
+        <div class = "navbar navbar-default navbar-static-top">
+            <div class = "container">
+                <a href = "#" class = "brand">Kameti Application</a>
+
+                <button class = "navbar-toggle" data-toggle="collapse" data-target = ".navHeaderCollapse">
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+                </button>
+
+                <div class = "collapse navbar-collapse navHeaderCollapse">
+                    <ul class = "nav navbar-nav navbar-right">
+
+                        <li class = "active"><a href = "https://play.google.com/apps/testing/in.only4ladies.kameti" ><i class="fa fa-android"></i> Download Kameti App</a></li>
+                        
+
+                        <li><a href = "#about" data-toggle="modal"><i class="fa fa-info-circle"></i> About Us</a></li>
+                        <li><a href = "#contact" data-toggle="modal"><i class="fa fa-heart"></i> Contact Us</a></li>
+						<li><a href = "#price" data-toggle="modal"><i class="fa fa-inr"></i> Price</a></li>
+						<li><a href = "#faq" data-toggle="modal"><i class="fa fa-question"></i> FAQ</a></li>
+						<li><a href = "#help" data-toggle="modal">Kameti Help</a></li>
+						<li><a href="https://kameti.blogspot.in" target="_blank">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<!-- Header Area Ends  -->
+
+		<!-- Fill by Anguler route  -->
+		<div >
+			<div class="container">
+			  <div data-ng-view="" id="ng-view" class="slide-animation"></div>
+			</div>
+		</div>
+
+
+		<div class="well banner">
+			<div class="container">
+				<div class="row" id="profile-grid">
+					<!-- Personalised Service -->
+					<div class="col-sm-4 col-xs-12" >
+						<div class="panel panel-default">
+							<div class="panel-heading kameti-name">Personalised Service</div>
+							<div class="panel-body">
+								  <div class="row">
+									  <div>
+										  <p>Personalised service and guidance to subscribers for planning their financial requirements.</p>
+									  </div>
+								  </div>
+							</div>
+						</div>
+					</div>
+					<!-- Prompt Disbursement-->
+					<div class="col-sm-4 col-xs-12" >
+						<div class="panel panel-default">
+							<div class="panel-heading kameti-name">Prompt Disbursement</div>
+							<div class="panel-body">
+								  <div class="row">
+									  <div>
+										  <p>Standardisation of documents for the disbursement of the prize amount. If you are using our service</p>
+									  </div>
+								  </div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Total Transparency -->
+					<div class="col-sm-4 col-xs-12" >
+						<div class="panel panel-default">
+							<div class="panel-heading kameti-name">Total Transparency</div>
+							<div class="panel-body">
+								  <div class="row">
+									  <div>
+										  <p>Meticulous screening of applications to maintain the quality Total transparency in auction proceedings</p>
+									  </div>
+								  </div>
+							</div>
+						</div>
+					</div>
+
+
+				 </div>
+			</div>
+		</div>
+		<!-- Footer Start
+		================================================== -->
+
+		<footer class="footer">
+			<div class="separator"></div>
+				<div class="container">
+				<span class="pull-left">Copyright <i class="fa fa-copyright"></i> 2014 Kameti, Inc. <a href="#privacy">Privacy</a> &middot; <a href="#terms">Terms</a></span>
+
+				<div class="asocial pull-right">
+					<a href="https://www.facebook.com/pages/Kameti/1500665656863955" target="_blank">
+						 <img src="web/img/icons/facebook-icon-48.png" width="24" height="24" alt="Facebook">
+					</a>
+					<a href="#" target="_blank">
+						 <img src="web/img/icons/twitter-icon-48.png" width="24" height="24" alt="Twitter">
+					</a>
+					 <a href="https://plus.google.com/communities/101147499557656651974" target="_blank">
+						 <img src="web/img/icons/google-plus-icon-48.png" width="24" height="24" alt="Google+">
+					 </a>
+
+					<a href="https://kameti.blogspot.in" target="_blank">
+						 <img src="web/img/icons/bloggerIcon.png" width="24" height="24" alt="Blog">
+					</a>
+
+					<a href = "https://www.youtube.com/channel/UCBoOurstu3fc5brU43XZYfg/videos" target="_blank">
+						<img src="web/img/icons/youtube.png" width="24" height="24" alt="Youtube">
+					</a>
+
+				</div>
+			</div>
+		</footer>
+		<!-- Footer End -->
+		<toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="web/js/jquery.min.js"></script>
+		<script src="web/js/bootstrap.min.js"></script>
+		<script src="web/js/docs.js"></script>
+
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="web/js/ie10-viewport-bug-workaround.js"></script>
+
+		<!-- Libs -->
+		<script src="web/js/angular-1.2.12/angular.min.js"></script>
+		<script src="web/js/angular-1.2.12/angular-route.min.js"></script>
+		<script src="web/js/angular-1.2.12/angular-animate.min.js" ></script>
+		<script src="web/js/angular-1.2.12/angular-img-fallback/angular.dcb-img-fallback.min.js"></script>
+		<script src="web/js/toaster.js"></script>
+		
+		<!-- Kameti JS for anguler -->
+		<script src="web/js/kameti.js"></script>
+
+		<!-- Kameti JS for anguler -->
+		<script src="web/app/app.js"></script>
+		<script src="web/app/data.js"></script>
+		<script src="web/app/kametiData.js"></script>
+		<script src="web/app/directives.js"></script>
+		<script src="web/app/authCtrl.js"></script>
+		<script src="web/app/kametiCtrl.js"></script>
+		<script src="web/app/mainCtrl.js"></script>
+		<script src="web/app/contactCtrl.js"></script>
+    </body>
+</html>

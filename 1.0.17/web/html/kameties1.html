@@ -1,0 +1,47 @@
+<div class="container" >
+	<div class="container">
+		<div class="row" id="profile-grid">
+
+			<div class="col-sm-4 col-xs-12 profile kameti-thumbnail" ng-repeat="kameti in kametiList" >
+		        <div class="panel panel-default">
+                    <div class="panel-heading kameti-name">{{kameti.kameti_name}}</div>
+                    <div class="kameti-thumbnail" id="hover-cap-4col">
+                        <div class="kameti-caption">
+                            <h4>Thumbnail Headline</h4>
+                            <p>short thumbnail description</p>
+                            <p><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>
+                        </div>
+                        <img ng-src="../v1/members/image/{{id}}" fallback-src="" class=" thumb img-thumbnail img-responsive img-rounded"
+                                             data-toggle="modal" data-target=".modal-profile-lg">
+                    </div>
+
+		          <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p class="col-sm-4">{{kameti.kameti_start_date}}</p>
+                                <p class="col-sm-4 pull-right">{{kameti.kameti_members}}</p>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <p class="col-sm-4">{{kameti.kameti_amount}}</p>
+                                <p class="col-sm-4 pull-right">{{kameti.kameti_interest_rate}}</p>
+                            </div>
+                            <div class="col-sm-12">
+                                <p class="col-sm-4">{{kameti.bid_start_time}}</p>
+                                <p class="col-sm-4 pull-right">{{kameti.bid_end_time}}</p>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <p class="col-sm-4">{{kameti.bid_start_time}}</p>
+                                <p class="col-sm-4 pull-right">{{kameti.bid_end_time}}</p>
+                            </div>
+
+                        </div>
+		          </div>
+		        </div>
+		    </div>
+		 </div>
+	</div>
+</div>
+

@@ -1,0 +1,221 @@
+<div class="page-content" >
+    <div class="row">
+        <div class="space-16"></div>
+        <div class="col-sm-9 col-sm-offset-1">
+            <div id="kametiForm" class="visible widget-box no-border">
+                <div class="widget-body">
+                    <div class="widget-main">
+                        <h1 class="bg-primary col-sm-10">
+                            New Auction
+                        </h1>
+                        <div class="space col-sm-10"></div>
+
+                        <form class="form-signin" role="form">
+                            <h2><span class="label label-info col-sm-10 no-padding-right">
+                                    Auction
+                                </span>
+                            </h2>
+                            <div class="space col-sm-10"><br></div>
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Kameti ID {{auction.kameti_id}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="number" class="form-control" placeholder="Kameti ID"
+                                               ng-model="auction.kameti_id" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i class="fa fa-edit"></i></button>
+                                      </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                            <div class="form-group">
+
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Auction Date {{auction.auction_date}}
+                                </span></h4>
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                      <input type="date" class="form-control" ng-model="auction.auction_date"/>
+                                      <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                                      </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="space col-sm-10"><br></div>
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Bidt Start Time {{auction.bid_start_time}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="time" class="form-control" placeholder="7:30 PM"
+                                               ng-model="auction.bid_start_time" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></button>
+                                      </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="space"></div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Bid End Time {{auction.bid_end_time}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="time" class="form-control" placeholder="8:30 PM"
+                                               ng-model="auction.bid_end_time" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></button>
+                                      </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space col-sm-10"><br></div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Auction Winner {{auction.auction_winner}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="number" class="form-control" placeholder="Winner ID"
+                                               ng-model="auction.auction_winner" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-user"></i></button>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                             <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Auction Runnerup {{auction.auction_runnerup}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="number" class="form-control" placeholder="Runnerup ID"
+                                               ng-model="auction.auction_runnerup" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-user"></i></button>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="space col-sm-10"><br></div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Min. Bid Amount {{auction.minimum_bid_amount}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="number" class="form-control" placeholder="Min. Bid Amount"
+                                               ng-model="auction.minimum_bid_amount" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i class="fa fa-inr"></i></button>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Max. Bid Amount {{auction.maximum_bid_amount}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="number" class="form-control" placeholder="Max. Bid Amount"
+                                               ng-model="auction.maximum_bid_amount" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i class="fa fa-inr"></i></button>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="space col-sm-10"><br></div>
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Member Profit {{auction.member_profit}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input type="number" class="form-control" placeholder="Profit"
+                                               ng-model="auction.member_profit" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i class="fa fa-inr"></i></button>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Interest Rate {{auction.interest_rate}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input class="form-control" placeholder="Profit"
+                                               ng-model="auction.interest_rate" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i class="fa fa-inr"></i></button>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space col-sm-10"><br></div>
+                            <div class="form-group">
+                                <h4><span class="label label-default col-sm-3 control-label no-padding-right">
+                                    Status {{auction.status}}
+                                </span></h4>
+
+                                <div class="col-sm-7">
+                                    <p class="input-group">
+                                        <input class="form-control" placeholder="Profit"
+                                               ng-model="auction.status" ng-required="true" autofocus/>
+                                        <span class="input-group-btn">
+                                            <button  class="btn btn-default"><i class="fa fa-power-off"></i></button>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="space col-sm-10"><br></div>
+                            <div class="space col-sm-3"></div>
+
+                            <div class="clearfix">
+
+                                    <div class="col-sm-7">
+                                        <button type="submit" class="width-35 pull-right btn btn-sm btn-primary no-padding-right" ng-click="kametiPost(kameti)"
+                                                data-ng-disabled="kametiForm.$invalid">
+                                            Submit
+                                        </button>
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.page-content -->
+    </div>
+</div>

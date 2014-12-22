@@ -1,0 +1,20 @@
+
+.page-header {
+    margin-top: 0;
+}
+
+.panel-body {
+    padding-top: 0;
+}
+
+.featuredImage{
+    margin-bottom: 15px;
+}
+
+.dropdown-menu-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 400px;
+}
